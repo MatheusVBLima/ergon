@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';  
+import Link from 'next/link';
 
 interface FAQItemProps {
   question: string;
@@ -128,11 +129,6 @@ export function Faq() {
         "Project timelines vary based on complexity and scope. Simple websites typically take 2-4 weeks, while custom software applications can take 8-16 weeks. We provide detailed timelines during our initial consultation and keep you updated throughout the development process.",
     },
     {
-      question: 'Do you provide ongoing support and maintenance?',
-      answer:
-        "Yes! We offer comprehensive support and maintenance packages to ensure your digital solutions continue to perform optimally. This includes updates, security patches, performance optimization, and technical support.",
-    },
-    {
       question: 'Can you work with our existing systems?',
       answer:
         'Absolutely! We specialize in integrating new solutions with existing systems and workflows. Whether you need API integrations, database migrations, or custom connectors, we ensure seamless compatibility with your current infrastructure.',
@@ -188,18 +184,20 @@ export function Faq() {
           <p className="mb-4 text-xs text-muted-foreground">
             We&apos;re here to help you
           </p>
-          <button
-            type="button"
-            className={cn(
-              'rounded-md px-4 py-2 text-sm',
-              'bg-primary text-primary-foreground',
-              'hover:bg-primary/90',
-              'transition-colors duration-200',
-              'font-medium',
-            )}
-          >
-            Contact Support
-          </button>
+          <Link href="https://cal.com/matheus-lima/15min" target="_blank">
+            <button
+              type="button"
+              className={cn(
+                'rounded-md px-4 py-2 text-sm',
+                'bg-primary text-primary-foreground',
+                'hover:bg-primary/90',
+                'transition-colors duration-200',
+                'font-medium',
+              )}
+            >
+              Book a call
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>

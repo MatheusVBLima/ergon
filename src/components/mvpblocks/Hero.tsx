@@ -25,7 +25,7 @@ export function Hero() {
           </span>
           <h1 className="mx-auto mb-6 max-w-4xl text-4xl font-light md:text-5xl lg:text-7xl">
             Transform your ideas into{' '}
-            <span className="text-[#9b87f5]">digital solutions</span> that generate results
+            <span className="text-[#9b87f5]">digital solutions</span> that generate results <span className="text-[#9b87f5]">worldwide</span>
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-white/60 md:text-xl">
             We create custom software, designs that convert, and automations that save time. 
@@ -84,12 +84,12 @@ export function Hero() {
               className="h-auto w-full rounded-lg border border-white/10"
             />
           </div>  */}
-           <HeroVideoDialog
+          <HeroVideoDialog
             animationStyle="from-center"
             videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
             thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
             thumbnailAlt="Hero Video"
-          />
+          /> 
         </motion.div>
       </div>
     </section>
